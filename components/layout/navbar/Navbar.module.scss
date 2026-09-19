@@ -1,5 +1,6 @@
 .navbar {
   position: fixed;
+
   top: 0;
   left: 0;
   z-index: 100;
@@ -7,7 +8,6 @@
   width: 100%;
   padding: 20px 0;
 
-  background: rgba(5, 8, 22, 0.7);
   border-bottom: 1px solid transparent;
 
   backdrop-filter: blur(16px);
@@ -29,13 +29,17 @@
   border-radius: var(--radius-lg);
 
   background: rgba(11, 17, 36, 0.65);
+
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
   display: inline-flex;
   align-items: center;
+
   gap: 2px;
+
+  color: var(--foreground);
 
   font-family: var(--font-geist-mono), monospace;
   font-size: 18px;
@@ -62,9 +66,14 @@
 .navLink {
   position: relative;
 
+  padding: 0;
+
   color: var(--text-secondary);
+
   font-size: 14px;
   font-weight: 500;
+
+  cursor: pointer;
 
   transition:
     color var(--transition-normal),
@@ -81,6 +90,7 @@
     height: 1px;
 
     background: var(--primary-light);
+
     box-shadow: 0 0 10px var(--glow-primary);
 
     transition: width var(--transition-normal);
@@ -88,6 +98,7 @@
 
   &:hover {
     color: var(--foreground);
+
     text-shadow: 0 0 16px var(--glow-primary);
 
     &::after {
@@ -96,6 +107,7 @@
   }
 }
 
+
 .contactButton {
   display: inline-flex;
   align-items: center;
@@ -103,6 +115,7 @@
 
   min-width: 110px;
   height: 40px;
+
   padding: 0 18px;
 
   border: 1px solid rgba(129, 140, 248, 0.3);
@@ -111,8 +124,11 @@
   background: rgba(99, 102, 241, 0.12);
 
   color: var(--foreground);
+
   font-size: 14px;
   font-weight: 600;
+
+  cursor: pointer;
 
   transition:
     background var(--transition-normal),
@@ -122,8 +138,250 @@
 
   &:hover {
     border-color: var(--border-hover);
+
     background: rgba(99, 102, 241, 0.2);
+
     box-shadow: 0 0 24px var(--glow-primary);
+
     transform: translateY(-1px);
+  }
+}
+
+.menuButton {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 5px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  background: rgba(99, 102, 241, 0.08);
+
+  cursor: pointer;
+
+  transition:
+    background var(--transition-normal),
+    border-color var(--transition-normal);
+
+  &:hover {
+    border-color: var(--border-hover);
+
+    background: rgba(99, 102, 241, 0.14);
+  }
+}
+
+.menuButton span {
+  width: 18px;
+  height: 1.5px;
+
+  border-radius: 10px;
+
+  background: var(--text-secondary);
+
+  transition:
+    transform var(--transition-normal),
+    opacity var(--transition-normal);
+}
+
+.menuButtonOpen span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+
+.menuButtonOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.menuButtonOpen span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+
+.mobileMenu {
+  width: min(100% - 32px, var(--container-width));
+
+  margin: 10px auto 0;
+
+  padding: 8px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  background: rgba(11, 17, 36, 0.92);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(99, 102, 241, 0.05);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateY(-10px);
+
+  transition:
+    opacity var(--transition-normal),
+    visibility var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.mobileMenuOpen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: translateY(0);
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileNavLink,
+.mobileContactButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 15px 14px;
+
+  border-radius: var(--radius-md);
+
+  color: var(--text-secondary);
+
+  font-size: 14px;
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.mobileNavLink span,
+.mobileContactButton span {
+  color: var(--text-muted);
+
+  font-size: 15px;
+
+  transition:
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.mobileNavLink:hover,
+.mobileContactButton:hover {
+  background: rgba(99, 102, 241, 0.08);
+
+  color: var(--foreground);
+}
+
+.mobileNavLink:hover span,
+.mobileContactButton:hover span {
+  color: var(--primary-light);
+
+  transform: translate(2px, -2px);
+}
+
+.mobileContactButton {
+  margin-top: 6px;
+
+  border: 1px solid rgba(129, 140, 248, 0.25);
+
+  background: rgba(99, 102, 241, 0.1);
+
+  color: var(--foreground);
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: min(100% - 32px, var(--container-width));
+  }
+
+  .nav {
+    gap: 20px;
+  }
+
+  .navLink {
+    font-size: 13px;
+  }
+
+  .contactButton {
+    min-width: 95px;
+
+    padding-inline: 14px;
+
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 14px 0;
+  }
+
+  .container {
+    width: min(100% - 32px, var(--container-width));
+
+    height: 58px;
+
+    padding: 0 14px;
+
+    border-radius: var(--radius-md);
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .nav,
+  .contactButton {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .container {
+    width: calc(100% - 24px);
+
+    height: 56px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .menuButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobileMenu {
+    width: calc(100% - 24px);
   }
 }

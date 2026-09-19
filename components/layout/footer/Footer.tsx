@@ -1,17 +1,37 @@
-import Link from "next/link";
+"use client";
 
+import Link from "next/link";
 import styles from "./Footer.module.scss";
+import { contactInfo } from "@/data/contact";
 
 const footerLinks = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", id: "about" },
+  { label: "Skills", id: "skills" },
+  { label: "Projects", id: "projects" },
+  { label: "Experience", id: "experience" },
+  { label: "Services", id: "services" },
+  { label: "Contact", id: "contact" },
 ];
 
 export default function Footer() {
+  const handleScroll = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+    window.history.pushState(null, "", `#${id}`);
+  };
+
+  const handleBackToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+    window.history.pushState(null, "", window.location.pathname);
+  };
+
   return (
     <footer className={styles.footer}>
       <div className="container">
@@ -26,9 +46,9 @@ export default function Footer() {
             Building digital experiences with modern web technologies.
           </p>
 
-          <a href="mailto:alitz1382@gmail.com" className={styles.email}>
+          <Link href="mailto:alitz1382@gmail.com" className={styles.email}>
             alitz1382@gmail.com
-          </a>
+          </Link>
         </div>
 
         <div className={styles.divider} />
@@ -36,36 +56,27 @@ export default function Footer() {
         <div className={styles.middle}>
           <nav className={styles.nav}>
             {footerLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
+              <button
+                key={link.id}
+                type="button"
+                onClick={() => handleScroll(link.id)}
+              >
                 {link.label}
-              </Link>
+              </button>
             ))}
           </nav>
 
           <div className={styles.socials}>
-            <a
-              href="https://github.com/ali-tz-2004"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/ali-taghizadeh-b167361b/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-
-            <a
-              href="https://www.hackerrank.com/profile/alitz138"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HackerRank
-            </a>
+            {contactInfo.contactLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                target={link.label === "Email" ? undefined : "_blank"}
+                rel={link.label === "Email" ? undefined : "noopener noreferrer"}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
 
@@ -74,10 +85,14 @@ export default function Footer() {
 
           <span>Designed & built with Next.js</span>
 
-          <a href="#top" className={styles.backToTop}>
+          <button
+            type="button"
+            className={styles.backToTop}
+            onClick={handleBackToTop}
+          >
             Back to top
             <span>↑</span>
-          </a>
+          </button>
         </div>
       </div>
     </footer>

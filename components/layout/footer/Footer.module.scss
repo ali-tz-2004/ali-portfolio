@@ -69,13 +69,16 @@
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  gap: 25px;
 
-  a {
+  button {
+    padding: 0;
+
     color: var(--text-muted);
 
-    font-size: 11px;
+    font-size: 12px;
+
+    cursor: pointer;
 
     transition: color var(--transition-fast);
 
@@ -120,28 +123,16 @@
 }
 
 .backToTop {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
+  padding: 0;
 
-  color: var(--text-secondary);
+  color: var(--text-muted);
+
+  cursor: pointer;
 
   transition: color var(--transition-fast);
 
-  span {
-    color: var(--primary-light);
-
-    font-size: 13px;
-
-    transition: transform var(--transition-fast);
-  }
-
   &:hover {
     color: var(--foreground);
-
-    span {
-      transform: translateY(-3px);
-    }
   }
 }
 
