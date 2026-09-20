@@ -14,9 +14,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ali-tag.ir"),
+
   title: "Ali Taghizadeh | Full Stack Developer",
+
   description:
-    "Full Stack Developer specializing in React, Next.js, Angular and .NET.",
+    "Ali Taghizadeh is a Full Stack Developer specializing in React, Next.js, Angular, ASP.NET Core and SQL Server.",
+
+  keywords: [
+    "Ali Taghizadeh",
+    "Ali Taghizadeh Developer",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Angular Developer",
+    "ASP.NET Core Developer",
+  ],
+
+  authors: [
+    {
+      name: "Ali Taghizadeh",
+      url: "https://ali-tag.ir",
+    },
+  ],
+
+  creator: "Ali Taghizadeh",
+
+  alternates: {
+    canonical: "https://ali-tag.ir",
+  },
+
+  openGraph: {
+    title: "Ali Taghizadeh | Full Stack Developer",
+    description:
+      "Full Stack Developer specializing in React, Next.js, Angular, ASP.NET Core and SQL Server.",
+    url: "https://ali-tag.ir",
+    siteName: "Ali Taghizadeh",
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
