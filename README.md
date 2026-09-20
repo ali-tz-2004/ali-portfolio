@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ali Taghizadeh — Developer Portfolio
 
-## Getting Started
+A modern personal portfolio website built to showcase my experience, skills, projects, and services as a Full Stack Developer.
 
-First, run the development server:
+The portfolio focuses on modern web development, clean UI, responsive design, performance, and a maintainable project structure.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Live Website
+
+🌐 [ali-tag.ir](https://ali-tag.ir)
+
+## About
+
+I'm a Full Stack Developer with experience building modern web applications and enterprise systems.
+
+My main areas of expertise include:
+
+- Frontend development
+- Backend and REST API development
+- Enterprise web applications
+- API integration
+- Database-driven applications
+- Application maintenance and bug fixing
+
+## Tech Stack
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- SCSS
+
+### Backend
+
+- ASP.NET Core
+- C#
+- Entity Framework Core
+- REST APIs
+
+### Database
+
+- SQL Server
+
+### Tools & Technologies
+
+- Git
+- Redux Toolkit
+- React Query
+- Capacitor
+- Stimulsoft
+
+## Features
+
+- Responsive portfolio design
+- Modern dark-themed UI
+- Smooth section navigation
+- Projects showcase
+- Professional experience section
+- Skills and technology overview
+- Services section
+- Contact information
+- SEO metadata
+- Open Graph metadata
+- XML sitemap
+- Robots configuration
+- Structured data using JSON-LD
+- Accessible and semantic HTML
+- Responsive navigation for mobile devices
+
+## Project Structure
+
+```text
+ali-portfolio/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── robots.ts
+│   └── sitemap.ts
+│
+├── components/
+│   ├── layout/
+│   ├── home/
+│   └── ui/
+│
+├── data/
+│
+├── public/
+│
+├── styles/
+│   ├── _variables.scss
+│   └── globals.scss
+│
+├── package.json
+└── tsconfig.json
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
