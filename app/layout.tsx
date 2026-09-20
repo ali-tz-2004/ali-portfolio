@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ali Taghizadeh | Frontend Developer",
+  title: "Ali Taghizadeh | Full Stack Developer",
   description:
-    "Frontend Developer specializing in React, Next.js, Angular and .NET.",
+    "Full Stack Developer specializing in React, Next.js, Angular and .NET.",
 };
 
 export default function RootLayout({
