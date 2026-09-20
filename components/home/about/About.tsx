@@ -13,7 +13,7 @@ const stats = [
   },
 ];
 
-const technologies = ["React", "Next.js", "Angular", ".NET"];
+const technologies = ["React", "Next.js", "Angular", ".NET", "SQL Server"];
 
 export default function About() {
   return (
@@ -31,18 +31,20 @@ export default function About() {
 
           <div className={styles.description}>
             <p>
-              I&apos;m a Full Stack Developer with a strong focus on frontend
-              development and modern web technologies.
+              I&apos;m a Full Stack Developer with experience building modern
+              web applications across both frontend and backend.
             </p>
 
             <p>
-              I&apos;ve worked on enterprise web applications as well as modern
-              frontend projects, building responsive interfaces, integrating
-              APIs and developing scalable application architectures.
+              I&apos;ve worked on enterprise applications as well as modern web
+              projects, building responsive interfaces, developing REST APIs,
+              integrating databases and implementing scalable application
+              architectures.
             </p>
 
             <p>
-              My main technologies include React, Next.js, Angular and .NET.
+              My main technologies include React, Next.js, Angular, .NET and SQL
+              Server.
             </p>
 
             <Link href="/resume" className={styles.resumeButton}>

@@ -23,15 +23,6 @@ export default function Footer() {
     window.history.pushState(null, "", `#${id}`);
   };
 
-  const handleBackToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-
-    window.history.pushState(null, "", window.location.pathname);
-  };
-
   return (
     <footer className={styles.footer}>
       <div className="container">
@@ -84,15 +75,6 @@ export default function Footer() {
           <span>© {new Date().getFullYear()} Ali Taghizadeh</span>
 
           <span>Designed & built with Next.js</span>
-
-          <button
-            type="button"
-            className={styles.backToTop}
-            onClick={handleBackToTop}
-          >
-            Back to top
-            <span>↑</span>
-          </button>
         </div>
       </div>
     </footer>

@@ -15,7 +15,7 @@ export default function Experience() {
 
           <p className={styles.description}>
             My professional journey building web applications, enterprise
-            systems, and modern frontend experiences.
+            systems, APIs, and scalable software solutions.
           </p>
         </div>
 

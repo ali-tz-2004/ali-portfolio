@@ -16,10 +16,12 @@ export const experiences: Experience[] = [
       "Maintaining and enhancing enterprise web applications while implementing new business features and improving existing systems.",
     technologies: [
       ".NET Framework",
-      "Angular",
+      "Entity Framework",
       "C#",
-      "i18next",
       "Message Broker",
+      "SQL Server",
+      "Angular",
+      "i18next",
     ],
     responsibilities: [
       "Maintained and enhanced legacy applications built with .NET Framework 4.8 and Angular 9.",

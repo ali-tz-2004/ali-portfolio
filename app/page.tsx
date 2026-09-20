@@ -7,6 +7,7 @@ import Services from "@/components/home/services/Services";
 import Skills from "@/components/home/skills/Skills";
 import Footer from "@/components/layout/footer/Footer";
 import Navbar from "@/components/layout/navbar/Navbar";
+import BackToTop from "@/components/ui/back-to-top/BackToTop";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       </main>
 
       <Footer />
+      <BackToTop />
     </>
   );
 }

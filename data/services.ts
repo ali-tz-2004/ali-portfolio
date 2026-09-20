@@ -8,37 +8,37 @@ export type Service = {
 export const services: Service[] = [
   {
     number: "01",
-    title: "Frontend Development",
+    title: "Full Stack Web Development",
     description:
-      "Building modern and maintainable frontend applications with React, Next.js, Angular, and TypeScript.",
-    technologies: ["React", "Next.js", "Angular", "TypeScript"],
+      "Building complete web applications from frontend interfaces to backend APIs and databases, with a focus on maintainability, scalability, and performance.",
+    technologies: ["React", "Next.js", ".NET", "SQL Server"],
   },
   {
     number: "02",
-    title: "Web Application Development",
+    title: "Frontend Development",
     description:
-      "Developing scalable web applications with clean architecture, reusable components, and responsive interfaces.",
-    technologies: ["React", "Next.js", "Angular", "SCSS"],
+      "Creating modern, responsive, and maintainable user interfaces with reusable components and a focus on usability and performance.",
+    technologies: ["React", "Next.js", "Angular", "TypeScript"],
   },
   {
     number: "03",
-    title: "API Integration",
+    title: "Backend & API Development",
     description:
-      "Connecting frontend applications to REST APIs and backend services with reliable data handling and authentication.",
-    technologies: ["REST API", "ASP.NET Core", "JWT", "React Query"],
+      "Developing reliable backend services and REST APIs with secure authentication, structured business logic, and efficient database integration.",
+    technologies: [".NET", "C#", "REST API", "Entity Framework Core"],
   },
   {
     number: "04",
-    title: "Bug Fixing & Maintenance",
+    title: "API Integration",
     description:
-      "Debugging existing applications, fixing frontend and integration issues, and improving application stability and performance.",
-    technologies: ["Debugging", "Performance", "Angular", "React"],
+      "Integrating frontend applications with existing APIs and backend services, including authentication, data handling, and error management.",
+    technologies: ["REST API", "JWT", "React Query", "Angular"],
   },
   {
     number: "05",
-    title: "Responsive UI Development",
+    title: "Bug Fixing & Maintenance",
     description:
-      "Creating responsive and accessible interfaces that provide a consistent experience across desktop, tablet, and mobile devices.",
-    technologies: ["Responsive Design", "SCSS", "CSS", "TypeScript"],
+      "Diagnosing and resolving application issues, improving performance, and maintaining existing web applications to keep them reliable and stable.",
+    technologies: ["Debugging", "Performance", "React", "Angular"],
   },
 ];

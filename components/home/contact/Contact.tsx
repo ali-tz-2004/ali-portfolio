@@ -76,12 +76,6 @@ export default function Contact() {
                 {contactInfo.availability}
               </span>
             </div>
-
-            <div className={styles.metaItem}>
-              <span className={styles.metaLabel}>Location</span>
-
-              <span className={styles.metaValue}>{contactInfo.location}</span>
-            </div>
           </div>
         </div>
       </div>

@@ -7,22 +7,19 @@ export type SkillCategory = {
 export const skillCategories: SkillCategory[] = [
   {
     title: "Frontend",
-    description: "Modern frontend development and responsive UI.",
+    description: "Modern frontend development and responsive web applications.",
     skills: [
       "React",
       "Next.js",
       "TypeScript",
       "Angular",
-      "JavaScript",
-      "HTML",
-      "CSS",
       "SCSS",
       "Tailwind CSS",
     ],
   },
   {
     title: "Backend",
-    description: "Building APIs and backend applications.",
+    description: "Building APIs, backend applications and business logic.",
     skills: [
       "ASP.NET Core",
       "C#",
@@ -32,13 +29,15 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "State & Data",
-    description: "Managing application state and data.",
-    skills: ["Redux Toolkit", "SQL Server", "EF Core"],
+    title: "Database & State",
+    description:
+      "Managing application state and working with application data.",
+    skills: ["SQL Server", "Redux Toolkit"],
   },
   {
     title: "Tools",
-    description: "Development workflow and supporting tools.",
-    skills: ["Git", "Stimulsoft", "Capacitor"],
+    description:
+      "Tools and technologies used throughout the development workflow.",
+    skills: ["Git", "Capacitor", "Stimulsoft"],
   },
 ];

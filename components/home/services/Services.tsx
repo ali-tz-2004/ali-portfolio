@@ -16,8 +16,9 @@ export default function Services() {
           </div>
 
           <p className={styles.description}>
-            From building new applications to improving existing products, I
-            help turn ideas and requirements into reliable web experiences.
+            From building full-stack applications to integrating APIs and
+            improving existing systems, I help turn ideas and requirements into
+            reliable and scalable software.
           </p>
         </div>
 

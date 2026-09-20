@@ -16,11 +16,12 @@ export default function Hero() {
             <span className={styles.highlight}>Ali Taghizadeh</span>
           </h1>
 
-          <h2 className={styles.role}>Frontend Developer</h2>
+          <h2 className={styles.role}>Full Stack Developer</h2>
 
           <p className={styles.description}>
-            I build modern, scalable and high-performance web applications with
-            React, Next.js and Angular.
+            I build modern, scalable and high-performance web applications
+            across the frontend and backend using React, Next.js, Angular and
+            .NET.
           </p>
 
           <div className={styles.actions}>
@@ -39,6 +40,8 @@ export default function Hero() {
             <span>Next.js</span>
             <span>TypeScript</span>
             <span>Angular</span>
+            <span>.NET</span>
+            <span>SQL Server</span>
           </div>
         </div>
 
@@ -77,15 +80,22 @@ export default function Hero() {
               <p className={styles.indent}>
                 role:{" "}
                 <span className={styles.string}>
-                  &quot;Frontend Developer&quot;
+                  &quot;Full Stack Developer&quot;
                 </span>
                 ,
               </p>
 
               <p className={styles.indent}>
-                stack: [<span className={styles.string}>&quot;React&quot;</span>
-                ,<span className={styles.string}>&quot;Next.js&quot;</span>
-                ],
+                frontend: [
+                <span className={styles.string}>&quot;React&quot;</span>,
+                <span className={styles.string}>&quot;Next.js&quot;</span>,
+                <span className={styles.string}>&quot;Angular&quot;</span>],
+              </p>
+
+              <p className={styles.indent}>
+                backend: [
+                <span className={styles.string}>&quot;.NET&quot;</span>,
+                <span className={styles.string}>&quot;SQL Server&quot;</span>],
               </p>
 
               <p>{"}"};</p>
