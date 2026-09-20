@@ -67,6 +67,32 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Person",
+                  name: "Ali Taghizadeh",
+                  url: "https://ali-tag.ir",
+                  jobTitle: "Full Stack Developer",
+                  sameAs: [
+                    "https://www.linkedin.com/in/ali-taghizadeh-b167361b/",
+                    "https://github.com/ali-tz-2004",
+                    "https://www.hackerrank.com/profile/alitz138",
+                  ],
+                },
+                {
+                  "@type": "WebSite",
+                  name: "Ali Taghizadeh",
+                  url: "https://ali-tag.ir",
+                },
+              ],
+            }),
+          }}
+        />
         {children}
       </body>
     </html>
