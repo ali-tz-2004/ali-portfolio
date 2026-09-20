@@ -8,7 +8,7 @@ export default function Hero() {
         <div className={styles.content}>
           <p className={styles.eyebrow}>
             <span className={styles.dot} />
-            Available for freelance work
+            Available for freelance & part-time work
           </p>
 
           <h1 className={styles.title}>

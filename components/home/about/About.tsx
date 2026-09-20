@@ -46,11 +46,6 @@ export default function About() {
               My main technologies include React, Next.js, Angular, .NET and SQL
               Server.
             </p>
-
-            <Link href="/resume" className={styles.resumeButton}>
-              View Resume
-              <span>↗</span>
-            </Link>
           </div>
         </div>
 
