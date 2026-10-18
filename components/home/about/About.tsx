@@ -11,7 +11,14 @@ const stats = [
   },
 ];
 
-const technologies = ["React", "Next.js", "Angular", ".NET", "SQL Server"];
+const technologies = [
+  "React",
+  "Next.js",
+  "Angular",
+  ".NET",
+  "SQL Server",
+  "Node.js",
+];
 
 export default function About() {
   return (
@@ -41,8 +48,9 @@ export default function About() {
             </p>
 
             <p>
-              My main technologies include React, Next.js, Angular, .NET and SQL
-              Server.
+              My primary technologies include React, Next.js, Angular, .NET and
+              SQL Server. I also have familiarity with Node.js for backend
+              development.
             </p>
           </div>
         </div>

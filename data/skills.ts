@@ -26,6 +26,7 @@ export const skillCategories: SkillCategory[] = [
       "Entity Framework Core",
       "REST API",
       "JWT Authentication",
+      "Node.js",
     ],
   },
   {
